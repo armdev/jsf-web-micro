@@ -1,0 +1,16 @@
+server:
+  port: 7070
+jsf:
+  STATE_SAVING_METHOD: server
+  PROJECT_STAGE: Production
+  bootsfaces:
+     getJqueryFromCdn: true    
+     theme: spacelab
+     USETHEME: true
+     
+  butterfaces:
+    provideJQuery: true
+    useCompressedResources: true
+    
+  
+    

@@ -1,0 +1,60 @@
+<ui:composition template="base.xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:b="http://butterfaces.org/components"
+                xmlns:o="http://omnifaces.org/ui"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <ui:define name="content">
+
+        <h:form styleClass="container" style="padding-top: 20px">
+            <o:validateOne components="text" />
+            <div class="alert alert-success">
+                <h:outputLink value="#{request.contextPath}/pages/bootsfaces.jsf">
+                    Boots faces
+                </h:outputLink>
+                <h:outputLink value="#{request.contextPath}/butterfaces.jsf">
+                    Butter faces
+                </h:outputLink>
+            </div>
+
+            <div class="row">
+
+
+                <b:number id="input"
+                          label="label"
+                          hideLabel="false"
+                          value="null"
+                          placeholder="Enter number..."
+                          min="null"
+                          max="null"
+                          step="null"
+                          styleClass="null"
+                          readonly="false"
+                          required="false"
+                          disabled="false"
+                          autoFocus="false"
+                          rendered="true">
+                    <b:tooltip>
+                        tooltip
+                    </b:tooltip>
+                </b:number>
+
+
+                <b:activateLibraries />
+
+
+
+            </div>
+
+        </h:form>
+
+
+        <b:waitingPanel />
+
+        <b:activateLibraries/>
+
+    </ui:define>
+
+</ui:composition>

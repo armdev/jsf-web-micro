@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"    
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"  
+      xmlns:o="http://omnifaces.org/ui"     
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"    
+
+      xmlns:b="http://bootsfaces.net/ui">
+
+    <ui:composition template="#{request.contextPath}/templates/template.xhtml"> 
+        <ui:define name="content">
+            <b:jumbotron>
+                <b:container>
+                    <h1>BootsFaces Hello world!</h1>
+                    
+                     <h:outputLink value="#{request.contextPath}/index.jsf">
+                        Main Page
+                    </h:outputLink>
+                   
+                    <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. 
+                        Use it as a starting point to create something more unique.
+                    </p>
+                    <p>
+                        <a href="https://github.com/TheCoder4eu/BootsFaces-examples/blob/master/src/main/webapp/jumbotron.xhtml" class="btn btn-lg btn-info">View Page Source »</a>
+                    </p>
+                </b:container>
+
+            </b:jumbotron>
+            <b:container>               
+                <b:row>
+                    <b:column col-md="4">
+                        <h2>Heading</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+                            ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                       
+                        <p><b:button outcome="" value="View details »"/></p>
+                    </b:column>
+                    <b:column col-md="4">
+                        <h2>Heading</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+                            ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        <p><b:button outcome="" value="View details »"/></p>
+                    </b:column>
+                    <b:column col-md="4">
+                        <h2>Heading</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+                            ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        <p><b:button outcome="" value="View details »"/></p>
+                    </b:column>
+                </b:row>
+                <hr/>
+                <footer>
+                    <p>© Company 2017</p>
+                </footer>
+            </b:container>
+        </ui:define>
+    </ui:composition>
+
+</html>
